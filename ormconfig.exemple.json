@@ -1,0 +1,13 @@
+{
+  "type": "mariadb",
+  "port": 3305,
+  "host": "localhost",
+  "username": "root",
+  "password": "root",
+  "database": "compraqui",
+  "migrations": ["./src/shared/infra/orm/migrations/*.ts"],
+  "entities": ["./src/modules/**/infra/typeorm/entities/*.ts"],
+  "cli": {
+    "migrationsDir": "./src/shared/infra/orm/migrations"
+  }
+}
